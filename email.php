@@ -1,8 +1,10 @@
 <?php
 
+//Reacarrega a página a cada 15 segundos
 header("Refresh:15");
 
-require_once("../control/db_classes.php");
+//Requer a consexão com o banco
+require_once("db_classes.php");
 
 $numeroRetorno = 0;
 $v_email = "informatica@camaraviamao.rs.gov.br";
