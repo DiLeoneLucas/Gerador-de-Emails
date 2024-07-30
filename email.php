@@ -7,7 +7,7 @@ header("Refresh:15");
 require_once("db_classes.php");
 
 $numeroRetorno = 0;
-$v_email = "informatica@camaraviamao.rs.gov.br";
+$v_email = "informe o seu email";
 
 $sql = "SELECT * FROM email WHERE status = '1' limit 2";
 $objDb = new db();
@@ -26,7 +26,7 @@ if($ponto>0){
            @ $v_email = $linha['email'];
 
            require_once("mail.php");
-             enviarEmail("Câmara Viamão Devolução Taxa","teste",$v_email);
+             enviarEmail("Título do email","teste",$v_email);
     }
     
     //echo("<br/>Foi encontrado: ". $numeroRetorno ." resultado para o termo <strong>".$valorPesquisa."</strong>"."\n");
