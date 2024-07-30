@@ -1,3 +1,5 @@
+create database *nome_do_banco*;
+
 use nome_do_banco;
 
 CREATE TABLE email (
